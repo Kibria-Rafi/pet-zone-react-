@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-xl">Your Brand</div>
+        <div className=" font-bold text-xl text-yellow-400">PET<span className="text-white">Zone</span> </div>
 
         <button
           className="lg:hidden text-white focus:outline-none"
@@ -35,50 +35,56 @@ const Navbar = () => {
 
         <div
           className={`lg:flex lg:items-center lg:w-auto ${
-            isOpen ? 'block' : 'hidden'
+            isOpen ? "block" : "hidden"
           }`}
         >
-          <div className="text-white lg:flex-grow text-center">
+          <div className="text-white lg:flex-grow lg:flex lg:gap-6  text-center">
             <NavLink
               to="/"
-              className="block lg:inline-block mt-4 lg:mt-0 mx-4 text-white"
-              activeClassName="bg-yellow-500 text-black px-2 py-1 rounded"
-              exact
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-yellow-400  " : ""
+              }
             >
               Home
             </NavLink>
+            
             <NavLink
               to="/products"
-              className="block lg:inline-block mt-4 lg:mt-0 mx-4 text-white"
-              activeClassName="bg-yellow-500 text-black px-2 py-1 rounded"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-yellow-400 " : ""
+              }
             >
               Products
             </NavLink>
             <NavLink
-              to="/about"
-              className="block lg:inline-block mt-4 lg:mt-0 mx-4 text-white"
-              activeClassName="bg-yellow-500 text-black px-2 py-1 rounded"
+              to="/favorite"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-yellow-400" : ""
+              }
             >
-              About
+              Favorite
             </NavLink>
             <NavLink
-              to="/contact"
-              className="block lg:inline-block mt-4 lg:mt-0 mx-4 text-white"
-              activeClassName="bg-yellow-500 text-black px-2 py-1 rounded"
+              to="/Contact"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-yellow-400" : ""
+              }
             >
               Contact
             </NavLink>
             <NavLink
               to="/login"
-              className="block lg:inline-block mt-4 lg:mt-0 mx-4 text-white"
-              activeClassName="bg-yellow-500 text-black px-2 py-1 rounded"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-yellow-400" : ""
+              }
             >
               Login
             </NavLink>
             <NavLink
-              to="/register"
-              className="block lg:inline-block mt-4 lg:mt-0 mx-4 text-white"
-              activeClassName="bg-yellow-500 text-black px-2 py-1 rounded"
+              to="/Register"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-yellow-400" : ""
+              }
             >
               Register
             </NavLink>

@@ -3,49 +3,57 @@
       "id": 1,
       "name": "Food 1",
       "image": "https://i.ibb.co/Z1gvhsj/TOH-Product-Card-Template-2023-02-14-T101259-903-1024x1024.png",
-      "price": 19.99
+      "price": 19.99,
+      "rating":3.5
     },
     {
       "id": 2,
       "name": "Food 2",
       "image": "https://i.ibb.co/mC04k6V/GUEST-2fe2efba-fd7d-46fb-8b95-bfc71af3a64f.jpg",
-      "price": 29.99
+      "price": 29.99,
+      "rating":3.5
     },
     {
       "id": 3,
       "name": "Food 3",
       "image": "https://i.ibb.co/W29CT8Z/616-358-1-1200x1200.webp",
-      "price": 39.99
+      "price": 39.99,
+      "rating":3.5
     },
     {
       "id": 4,
       "name": "Food 4",
       "image": "https://i.ibb.co/F7FmsFr/40709.webp",
-      "price": 49.99
+      "price": 49.99,
+      "rating":3.5
     },
     {
       "id": 5,
       "name": "Food 5",
       "image": "https://i.ibb.co/KKb5vzH/mne3mysbravaznawlaan.jpg",
-      "price": 59.99
+      "price": 59.99,
+      "rating":3.5
     },
     {
       "id": 6,
       "name": "Food 6",
       "image": "https://i.ibb.co/VDHzkpW/Tuna-Cranberry.webp",
-      "price": 69.99
+      "price": 69.99,
+      "rating":3.5
     },
     {
       "id": 7,
       "name": "Food 7",
       "image": "https://i.ibb.co/jfLdv5D/download.jpg",
-      "price": 79.99
+      "price": 79.99,
+      "rating":3.5
     },
     {
       "id": 8,
       "name": "Food 8",
       "image": "https://i.ibb.co/bdGbKxg/download-1.jpg",
-      "price": 89.99
+      "price": 89.99,
+      "rating":3.5
     }
   ]
   

@@ -7,6 +7,11 @@ import {
 } from "react-router-dom";
 import Root from './Root';
 import Home from './Home';
+import Products from './Products';
+import Contact from './Contact';
+import Favorite from './Favorite';
+import Login from './Login';
+import Register from './Register';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +21,28 @@ const router = createBrowserRouter([
       {
         path:"/",
         element: <Home></Home>
+      },
+      {
+        path:"/products",
+        element: <Products></Products>
+      },
+      {
+        path:"contact",
+        element: <Contact></Contact>
+      },
+      {
+        path:"/favorite",
+        element:<Favorite></Favorite>
+      },
+      {
+        path:"/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/register",
+        element: <Register></Register>
       }
+
     ]
   },
 ]);
