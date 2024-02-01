@@ -7,24 +7,22 @@ import {
 } from "react-router-dom";
 import Root from './Root';
 import Home from './Home';
-import Products from './Products';
 import Contact from './Contact';
 import Favorite from './Favorite';
 import Login from './Login';
 import Register from './Register';
+import Errorpage from './Errorpage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Errorpage></Errorpage>,
     children:[
       {
         path:"/",
-        element: <Home></Home>
-      },
-      {
-        path:"/products",
-        element: <Products></Products>
+        element: <Home></Home>,
+        loader: ()=> fetch('products.json')
       },
       {
         path:"contact",

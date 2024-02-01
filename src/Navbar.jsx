@@ -47,15 +47,6 @@ const Navbar = () => {
             >
               Home
             </NavLink>
-            
-            <NavLink
-              to="/products"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-yellow-400 " : ""
-              }
-            >
-              Products
-            </NavLink>
             <NavLink
               to="/favorite"
               className={({ isActive, isPending }) =>
