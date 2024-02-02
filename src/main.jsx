@@ -12,6 +12,8 @@ import Favorite from './Favorite';
 import Login from './Login';
 import Register from './Register';
 import Errorpage from './Errorpage';
+import Details from './Details';
+import BuyerDetails from './BuyerDetails';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,15 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>
+      },
+      {
+        path: "/products/:id",
+        element:<Details></Details>,
+        loader: ()=> fetch('products.json')
+      },
+      {
+        path:"/buyerdetails",
+        element: <BuyerDetails/>
       }
 
     ]

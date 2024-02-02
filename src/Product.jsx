@@ -11,12 +11,16 @@ const Product = ({product}) => {
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title">{name}</h2>
+    <p className="text-white font-bold">Price: <span className="text-yellow-400">{price} $</span></p>
     <p>If you buy this product, simply click buy now button</p>
+    
     <div className="card-actions">
-      <Link to={`/product/ ${id}`}>
+      <Link to={`/products/ ${id}`}>
       <button className="px-3 py-1 hover:bg-white bg-yellow-400 text-black font-bold rounded-lg">See details -></button>
       </Link>
+      <Link to="/buyerdetails">
       <button className="px-3 py-1 hover:bg-white bg-yellow-400 text-black font-bold rounded-lg">Buy Now</button>
+      </Link>
     </div>
   </div>
 </div>
